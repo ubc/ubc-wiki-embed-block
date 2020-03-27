@@ -5,14 +5,15 @@ const { InspectorControls } = wp.blockEditor;
 const { PanelBody, Button, ButtonGroup, CheckboxControl, TextControl } = wp.components;
 const ServerSideRender = wp.serverSideRender;
 const { useState } = wp.element;
+const { __ } = wp.i18n;
 
 const Edit = ( { attributes, setAttributes } ) => {
 	const { source, headingType, noEditLinks, noTabContens, noInfoBox } = attributes;
 	const [ newSource, setNewSource ] = useState( source );
 	const headingTypeOptions = {
-		Default: '0',
-		Tabs: '1',
-		Accordions: '2',
+		Default: 0,
+		Tabs: 1,
+		Accordions: 2,
 	};
 
 	/**
@@ -21,7 +22,7 @@ const Edit = ( { attributes, setAttributes } ) => {
 	function renderDefaultView() {
 		return (
 			<div className="ubc-wiki-embed-default-view">
-				<h2 className="ubc-wiki-embed-default-view__heading">Wiki Embed, please insert url below:</h2>
+				<h2 className="ubc-wiki-embed-default-view__heading">{ __( 'Paste URL for OpenWiki resource, i.e. https://wiki.ubc.ca/Course:Math340', 'ubc-wiki-embed' ) }</h2>
 				<div className="ubc-wiki-embed-default-view__controls">
 					<TextControl
 						value={ newSource }

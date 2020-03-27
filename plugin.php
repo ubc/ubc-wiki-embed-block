@@ -22,6 +22,12 @@
 
  add_action('init', __NAMESPACE__ . '\\load_block_assets', 10);
 
+ /**
+  * Load assets required by Wiki Embed Block. Javascript and CSS
+  * Enqueue to editor only
+  *
+  * @return void
+  */
  function load_block_assets(){
      wp_register_script(
          'ubc-wiki-embed-script',
@@ -45,7 +51,7 @@
         filemtime( plugin_dir_path( __FILE__ ) . 'build/block.css' )
     );
 
-    // Will be moreved
+    // Will be removed
     add_editor_style( 'https://cdn.ubc.ca/clf/7.0.4/css/ubc-clf-full.min.css' );
 
     // Get default settings from Wiki Embed plugin
@@ -53,7 +59,7 @@
 
     /**
      * Wiki embed plugin only save global settings when clicked on save button on the settings page, not during plugin activation.
-     * So all the settings here have hardcoded fall back aligned with Wiki Embed plugin default.
+     * So all the settings here have hardcoded fallback aligned with Wiki Embed plugin default.
      */
     register_block_type(
         'ubc/wiki-embed',
@@ -67,12 +73,12 @@
                     'default' => '',
                 ),
                 'headingType' => array(
-                    'type' => 'string',
-                    'default' => $wiki_embed_defaults ? $wiki_embed_defaults['tabs'] : '1',
+                    'type' => 'number',
+                    'default' => $wiki_embed_defaults ? absint( $wiki_embed_defaults['tabs'] ) : 1,
                 ),
                 'noEditLinks' => array(
                     'type' => 'boolean',
-                    'default' => $wiki_embed_defaults ? $wiki_embed_defaults['no-edit'] : true,
+                    'default' => $wiki_embed_defaults ? boolval( $wiki_embed_defaults['no-edit'] ) : true,
                 ),
                 'noTabContens' => array(
                     'type' => 'boolean',
@@ -90,6 +96,7 @@
  /**
   * Server Side Rendering content of the Wiki Embed block.
   *
+  * @param [array] $attributes Block attributes ( settings about how content should be embeded and displayed )
   * @return void
   */
  function render_block( $attributes ) {
@@ -97,7 +104,7 @@
         sprintf(
             '[wiki-embed%1$s%2$s%3$s%4$s%5$s]',
             $attributes['source'] ? ' url="' . esc_html( $attributes['source'] ) . '"' : '',
-            $attributes['headingType'] === '0' ? '' : ' ' . ( $attributes['headingType'] === '1' ? 'tabs' : 'accordion' ),
+            $attributes['headingType'] == 0 ? '' : ' ' . ( $attributes['headingType'] == 1 ? 'tabs' : 'accordion' ),
             $attributes['noEditLinks'] ? ' no-edit' : '',
             $attributes["noTabContens"] ? ' no-contents' : '',
             $attributes["noInfoBox"] ? ' no-infobox' : ''

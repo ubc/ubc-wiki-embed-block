@@ -1,5 +1,5 @@
 /**
- * BLOCK: Call To Action.
+ * BLOCK: UBC Wiki Embed.
  */
 
 // Import block dependencies and components.
@@ -10,7 +10,7 @@ const { registerBlockType } = wp.blocks;
 
 registerBlockType( 'ubc/wiki-embed', {
 	title: 'UBC Wiki Embed',
-	description: 'Gutenberg block to provide ability to embed page contents from any wiki resources',
+	description: 'Adds ability to embed content from select UBC OpenWiki platforms such as "wiki.ubc.ca" and see a live preview in the editor.',
 	icon: 'book',
 	keywords: [ __( 'Wiki' ), __( 'Embed' ) ],
 	category: 'embed',
