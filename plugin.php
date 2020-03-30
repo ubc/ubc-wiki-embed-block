@@ -51,9 +51,6 @@
         filemtime( plugin_dir_path( __FILE__ ) . 'build/block.css' )
     );
 
-    // Will be removed
-    add_editor_style( 'https://cdn.ubc.ca/clf/7.0.4/css/ubc-clf-full.min.css' );
-
     // Get default settings from Wiki Embed plugin
     $wiki_embed_defaults = get_option( 'wikiembed_options' ) ? get_option( 'wikiembed_options' )['default'] : null;
 

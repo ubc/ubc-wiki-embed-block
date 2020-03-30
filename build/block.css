@@ -1,3 +1,356 @@
+.wp-block[data-type="ubc/wiki-embed"] .accordion {
+  margin-bottom: 20px; }
+
+.wp-block[data-type="ubc/wiki-embed"] .accordion-group {
+  margin-bottom: 2px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px; }
+
+.wp-block[data-type="ubc/wiki-embed"] .accordion-heading {
+  border-bottom: 0; }
+
+.wp-block[data-type="ubc/wiki-embed"] .accordion-heading .accordion-toggle {
+  display: block;
+  padding: 8px 15px; }
+
+.wp-block[data-type="ubc/wiki-embed"] .accordion-toggle {
+  cursor: pointer; }
+
+.wp-block[data-type="ubc/wiki-embed"] .accordion-inner {
+  padding: 9px 15px;
+  border-top: 1px solid #e5e5e5; }
+
+.wp-block[data-type="ubc/wiki-embed"] .accordion-group a {
+  color: #2f5d7c;
+  text-decoration: underline; }
+
+.wp-block[data-type="ubc/wiki-embed"] .accordion-group a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .accordion-group a:focus {
+  background: 0;
+  color: #2f5d7c;
+  text-decoration: none;
+  -webkit-transition: none;
+  transition: none; }
+
+.wp-block[data-type="ubc/wiki-embed"] .accordion-heading a {
+  color: #002145;
+  text-decoration: none; }
+
+.wp-block[data-type="ubc/wiki-embed"] .accordion-heading a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .accordion-heading a:active,
+.wp-block[data-type="ubc/wiki-embed"] .accordion-heading a:focus {
+  background: #002145;
+  color: #fff;
+  text-decoration: none; }
+
+.wp-block[data-type="ubc/wiki-embed"] .collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height .35s ease;
+  transition: height .35s ease; }
+
+.wp-block[data-type="ubc/wiki-embed"] .collapse.in {
+  height: auto; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs {
+  *zoom: 1;
+  list-style: none; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav > li > a {
+  display: block; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs:before,
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs:after {
+  clear: both; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > li {
+  float: left; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > li > a {
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 2px;
+  line-height: 14px; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs {
+  border-bottom: 1px solid #ddd; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > li {
+  margin-bottom: -1px; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > li > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > li > a:focus {
+  border-color: #eee #eee #ddd; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > .active > a,
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > .active > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > .active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs.nav-stacked {
+  border-bottom: 0; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs.nav-stacked > li > a {
+  border: 1px solid #ddd;
+  border-radius: 0; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs.nav-stacked > li:first-child > a {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-topleft: 4px; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs.nav-stacked > li:last-child > a {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs.nav-stacked > li > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs.nav-stacked > li > a:focus {
+  z-index: 2;
+  border-color: #ddd; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs .dropdown-menu {
+  border-radius: 0 0 6px 6px; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs .dropdown-toggle .caret {
+  margin-top: 8px; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav .active .dropdown-toggle .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs .active .dropdown-toggle .caret {
+  border-top-color: #555;
+  border-bottom-color: #555; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs .open .dropdown-toggle,
+.wp-block[data-type="ubc/wiki-embed"] .nav > li.dropdown.open.active > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .nav > li.dropdown.open.active > a:focus {
+  color: #fff;
+  background-color: #999;
+  border-color: #999; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav li.dropdown.open .caret,
+.wp-block[data-type="ubc/wiki-embed"] .nav li.dropdown.open.active .caret,
+.wp-block[data-type="ubc/wiki-embed"] .nav li.dropdown.open a:hover .caret,
+.wp-block[data-type="ubc/wiki-embed"] .nav li.dropdown.open a:focus .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  opacity: 1;
+  filter: alpha(opacity=100); }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-stacked .open > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-stacked .open > a:focus {
+  border-color: #999; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabbable {
+  *zoom: 1; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabbable:before,
+.wp-block[data-type="ubc/wiki-embed"] .tabbable:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabbable:after {
+  clear: both; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tab-content {
+  overflow: auto; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-below > .nav-tabs,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs {
+  border-bottom: 0; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tab-content > .tab-pane {
+  display: none; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tab-content > .active,
+.wp-block[data-type="ubc/wiki-embed"] .pill-content > .active {
+  display: block; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-below > .nav-tabs {
+  border-top: 1px solid #ddd; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-below > .nav-tabs > li {
+  margin-top: -1px;
+  margin-bottom: 0; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-below > .nav-tabs > li > a {
+  border-radius: 0 0 4px 4px; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-below > .nav-tabs > li > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-below > .nav-tabs > li > a:focus {
+  border-top-color: #ddd;
+  border-bottom-color: transparent; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-below > .nav-tabs > .active > a,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-below > .nav-tabs > .active > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-below > .nav-tabs > .active > a:focus {
+  border-color: transparent #ddd #ddd #ddd; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs > li,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs > li {
+  float: none; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs > li > a,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  border-radius: 4px 0 0 4px; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs > li > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eee #ddd #eee #eee; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs .active > a,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs .active > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #fff; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs {
+  float: right;
+  margin-left: 19px;
+  border-left: 1px solid #ddd; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs > li > a {
+  margin-left: -1px;
+  border-radius: 0 4px 4px 0; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs > li > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs > li > a:focus {
+  border-color: #eee #eee #eee #ddd; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs .active > a,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs .active > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs .active > a:focus {
+  border-color: #ddd #ddd #ddd transparent;
+  *border-left-color: #fff; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs .open .dropdown-toggle,
+.wp-block[data-type="ubc/wiki-embed"] .nav > li.dropdown.open.active > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .nav > li.dropdown.open.active > a:focus {
+  color: #fff;
+  background-color: #2f5d7c;
+  border-color: #2f5d7c; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > li > a {
+  text-decoration: none; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > li > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > li > a:focus {
+  text-decoration: none; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs {
+  border-bottom: 1px solid #d7e0e7; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > li > a {
+  background: #2f5d7c;
+  border: 1px solid transparent;
+  color: #fff; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > li > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > li > a:focus {
+  background-color: #002145;
+  border: 1px solid #002145;
+  color: #fff; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > .active > a,
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > .active > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > .active > a:active,
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs > .active > a:focus {
+  background-color: #002145;
+  border: 1px solid #002145;
+  border-bottom-color: transparent;
+  color: #fff;
+  cursor: default;
+  text-decoration: none; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs.nav-stacked > li > a {
+  border: 1px solid #d7e0e7; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-below > .nav-tabs > li > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-below > .nav-tabs > li > a:focus {
+  border: 1px solid #002145; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-below > .nav-tabs > .active > a,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-below > .nav-tabs > .active > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-below > .nav-tabs > .active > a:focus {
+  border: 1px solid #002145; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs > li > a {
+  border-color: #2f5d7c; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs > li > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs > li > a:focus {
+  border-color: #002145; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs .active > a,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs .active > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-left > .nav-tabs .active > a:focus {
+  border-color: #002145; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs > li > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs > li > a:focus {
+  border-color: #002145; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs .active > a,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs .active > a:hover,
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs .active > a:focus {
+  border-color: #002145; }
+
+.wp-block[data-type="ubc/wiki-embed"] .tabs-right > .nav-tabs {
+  border-left: 1px solid #d7e0e7; }
+
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs [class^="icon-"],
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs [class*=" icon-"],
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs [class^="icon-"].icon-large,
+.wp-block[data-type="ubc/wiki-embed"] .nav-tabs [class*=" icon-"].icon-large {
+  line-height: .9em; }
+
+@media print {
+  .wp-block[data-type="ubc/wiki-embed"] .nav .nav-tabs a:link:after {
+    content: none; }
+  .wp-block[data-type="ubc/wiki-embed"] .nav-tabs > .active > a,
+  .wp-block[data-type="ubc/wiki-embed"] .nav-tabs > .active > a:hover {
+    border: 0;
+    color: #000;
+    font-weight: 700;
+    border-bottom: 2px solid #000; }
+  .wp-block[data-type="ubc/wiki-embed"] .nav-tabs > li > a {
+    color: #000;
+    border: 0; } }
+
 .ubc-wiki-embed-default-view {
   padding: 40px;
   text-align: center;
@@ -6,9 +359,6 @@
     margin-top: 0 !important;
     font-size: 1.3rem !important;
     margin-bottom: 1rem !important; }
-
-.editor-styles-wrapper {
-  background: #fff !important; }
 
 
 /*# sourceMappingURL=block.css.map*/
