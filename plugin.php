@@ -73,7 +73,7 @@
                     'default' => '',
                 ),
                 'headingType' => array(
-                    'type' => 'number',
+                    'type' => 'integer',
                     'default' => $wiki_embed_defaults ? absint( $wiki_embed_defaults['tabs'] ) : 1,
                 ),
                 'noEditLinks' => array(
@@ -104,7 +104,7 @@
         sprintf(
             '[wiki-embed%1$s%2$s%3$s%4$s%5$s]',
             $attributes['source'] ? ' url="' . esc_html( $attributes['source'] ) . '"' : '',
-            $attributes['headingType'] == 0 ? '' : ' ' . ( $attributes['headingType'] == 1 ? 'tabs' : 'accordion' ),
+            $attributes['headingType'] === 0 ? '' : ' ' . ( $attributes['headingType'] === 1 ? 'tabs' : 'accordion' ),
             $attributes['noEditLinks'] ? ' no-edit' : '',
             $attributes["noTabContens"] ? ' no-contents' : '',
             $attributes["noInfoBox"] ? ' no-infobox' : ''
