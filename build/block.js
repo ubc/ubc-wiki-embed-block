@@ -116,18 +116,21 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./edit */ "./src/blocks/wiki-embed/edit.js");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./editor.scss */ "./src/blocks/wiki-embed/editor.scss");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_editor_scss__WEBPACK_IMPORTED_MODULE_1__);
 /**
  * BLOCK: UBC Wiki Embed.
  */
 // Import block dependencies and components.
 
+
 const __ = wp.i18n.__;
 const registerBlockType = wp.blocks.registerBlockType;
 registerBlockType('ubc/wiki-embed', {
-  title: 'UBC Wiki Embed',
-  description: 'Adds ability to embed content from select UBC OpenWiki platforms such as "wiki.ubc.ca" and see a live preview in the editor.',
+  title: __('UBC Wiki Embed', 'ubc-wiki-embed'),
+  description: __('Adds ability to embed content from select UBC OpenWiki platforms such as "wiki.ubc.ca" and see a live preview in the editor.', 'ubc-wiki-embed'),
   icon: 'book',
-  keywords: [__('Wiki'), __('Embed')],
+  keywords: [__('Wiki', 'ubc-wiki-embed'), __('Embed', 'ubc-wiki-embed')],
   category: 'embed',
   edit: _edit__WEBPACK_IMPORTED_MODULE_0__["default"],
   save: () => null
